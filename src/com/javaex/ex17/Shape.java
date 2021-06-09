@@ -3,8 +3,8 @@ package com.javaex.ex17;
 public class Shape {
 
 	//필드
-	private String fillColor;
-	private String lineColor;
+	protected String fillColor;
+	protected String lineColor;
 	
 	
 	//생성자
@@ -45,5 +45,9 @@ public class Shape {
 	public void draw() {
 		//[면색:빨강, 선색:검정] 도형을 그렸습니다.
 		System.out.println("[면색:"+fillColor+", 선색:"+lineColor+"] 도형을 그렸습니다.");
+	}
+	
+	public double area() {
+		return 0.0;
 	}
 }
